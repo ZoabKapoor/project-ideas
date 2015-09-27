@@ -51,7 +51,7 @@ I want to register for these classes:
     1. DSLs
     2. LSD (Software Development)
     3. LDS (Intro to Mormonism)
-    ...
+    ... etc
 ```
 
 Where [range] is a numeric range of credits whose lower bound is 12 and upper bound is 18. 
@@ -71,6 +71,8 @@ The only kind of error that can occur in this case would be parse errors, where 
 ### Expressiveness
 _What should be easy to do in this language? What should be possible, but
 difficult? What should be impossible or very difficult?_
+
+The expressiveness of this lanugage is very limited. It should be easy to specify the classes and number of credits you want to register for, and to specify your identifying information. It should be impossible to do anything else.
 
 
 ### Related work
@@ -99,6 +101,7 @@ Because programs in this language have such simple syntax, I imagine most of som
 ### Scope
 _How big an idea is this? How ambitious is this project?_
 
+While the language itself will be pretty small, the project would be fairly difficult to actually implement. This is largely because creating and implementing the models used on the backend (the agggregator for student choices, and the pre-registrator code) would be fairly difficult. However, I think that an impementer could successfully implement this project end-to-end in half a semester. 
 
 ### Benefits and drawbacks
 _Why might this be a good idea for a project? Why might this not be a good idea 
@@ -113,3 +116,4 @@ There are also two main reasons why this might not be a good project idea:
 1. As mentioned earlier, the implementer would probably spend a lot more time engaging in the systems aspect of the language than the design aspect. Since this class seems to be focused on language design in a big way, this project may not be best at fulfilling the learning goals of the class.
 2. Even if this language did exist, the bureaucracy required to get anything done with Mudd's administration may be a prohobitively large barrier to actually adopting this system.
 
+I think the main tradeoff in terms of deciding whether to implement this project is the tradeoff between spending a lot of time on language design (which is more in line with this class's goals) and building something that would be really useful to Mudders. 
