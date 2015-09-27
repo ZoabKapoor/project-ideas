@@ -10,9 +10,9 @@ _What need is met by your idea? Who are you helping? What is that person's
 experience like now? What would their experience be like if you could help 
 them?_
 
-Picture this: A student, sitting in her room at 12:14 PM. HMC's portal is open on her laptop. Her registration starts in a minute. She knows that two of the classes she wants to take have only a few seats left in them. The clock strikes 12:15. She makes a choice, and regretfully clicks the search button on the Portal. After a few agonizing seconds, she gets redirected back to the Portal search page. "You shouldn't have clicked refresh", the angry red text says. Confused, she navigates back to the course she wanted. By that time, both courses are filled up. She shakes her fist at the heavens and curses the Portal.
+Picture this: A student, sitting in her room at 12:14 PM. HMC's registration portal is open on her laptop. Her registration starts in a minute. She knows that two of the classes she wants to take have only a few seats left in them. The clock strikes 12:15. She makes a choice, and regretfully clicks the search button on the portal. After a few agonizing seconds, she gets redirected back to the portal's search page. "You shouldn't have clicked refresh", the angry red text says. Confused, she navigates back to the course she wanted. By that time, both courses are filled up. She shakes her fist at the heavens and curses the portal.
 
-But what if there was a better way? What if she could instead compile a list of her favourite classes (in order of importance) a few days earlier and send it to the registrar. The registrar would compile this list from all students, and then sort students into their preferred classes in order of registration time, breaking ties randomly. And people wouldn't get locked out of classes they want to take because Portal decided to crash on them randomly. 
+But what if there was a better way? What if she could instead compile a list of her favourite classes (in order of importance) a few days earlier and send it to the registrar. The registrar would compile this list from all students, and then sort students into their preferred classes in order of registration time, breaking ties randomly. And people wouldn't get locked out of classes they want to take because portal decided to crash on them randomly. 
 
 ### Why a language?
 _Why is a DSL appropriate for your user(s)? How does it address the need?_
@@ -30,12 +30,12 @@ Since everyone at Mudd has taken CS5 or CS42, they all have experience dealing w
 ### Why you?
 _What excites you about this idea? How did you come up with it?_
 
-The Portal is possibly the most hated piece of software among Mudders. Coming up with a better alternative would make a lot of people (including myself) a lot happier. One of my priorities in this final project is building something that would actually make people's lives better, and I think that building this system would make Mudders a lot less stressed about registration.
+The portal is possibly the most hated piece of software among Mudders. Coming up with a better alternative would make a lot of people (including myself) a lot happier. One of my priorities in this final project is building something that would actually make people's lives better, and I think that building this system would make Mudders a lot less stressed about registration.
 
 ### Domain
 _Describe the project's domain in five words._
 
-Like the Portal, but better.
+Like the portal, but better.
 
 ### Interface (syntax)
 _How might the user interact with the language? What does programming look 
@@ -62,7 +62,7 @@ the user?_
 
 Note that running this program wouldn't directly enroll a student in classes. Instead, it would put their preferences into some central database of preferences. In particular, I'm imagining that every class would have a "waiting list" into which a student would go if they listed the class in their preferences. 
 
-Then, there would be another program that actually sorts students into classes by taking people off the waiting list in order of priority (and breaking ties randomly). This program would then either directly interface with Portal and reserve that many seats for pre-registered students or print out a list of classes and how many seats to reserve for the registrar to take care of manually. 
+Then, there would be another program that actually sorts students into classes by taking people off the waiting list in order of priority (and breaking ties randomly). This program would then either directly interface with the portal and reserve that many seats for pre-registered students or print out a list of classes and how many seats to reserve for the registrar to take care of manually. 
 
 The only kind of error that can occur in this case would be parse errors, where a program doesn't adhere to the structure expected by the parser. These could be either syntax errors, where the program isn't formatted correctly, or runtime errors where, for instance, a class can't be found. These could be communicated to the user by throwing the appropriate type of exception - for instance, a ClassNotFound exception if the class the user wants to register for doesn't exist, or NameNotFound exception if the user forgot to enter their name or their name doesn't exist in the list of HMC students.
 
@@ -78,7 +78,7 @@ aren't and conjecture why not. If so, describe them and provide links. How well
 do they address the need? Are there any particularly admirable qualities of the
 language? Are there parts of the language you think could be improved?_
 
-There are no other DSLs in this domain that I know of. I imagine there aren't any because the domain is really small - for all we know, it could be just Mudd that has to deal with a terrible portal. 
+There are no other DSLs in this domain that I know of. I imagine there aren't any because the domain is really small - for all we know, it could be just Mudd that has to deal with a terrible registration portal. 
 
 
 ## The Project
