@@ -12,16 +12,25 @@ them?_
 
 Picture this: A student, sitting in her room at 12:14 PM. HMC's portal is open on her laptop. Her registration starts in a minute. She knows that two of the classes she wants to take have only a few seats left in them. The clock strikes 12:15. She makes a choice, and regretfully clicks the search button on the Portal. After a few agonizing seconds, she gets redirected back to the Portal search page. "You shouldn't have clicked refresh", the angry red text says. Confused, she navigates back to the course she wanted. By that time, both courses are filled up. She shakes her fist at the heavens and curses the Portal.
 
-But what if there was a better way? What if she could instead compile a list of her favourite classes (in order of importance) a few days earlier and send it to the registrar. The registrar would compile this list from all students, and then sort students into their preferred classes in order of registration time, breaking ties randomly. And people wouldn't have to deal with Portal deciding to crash on them randomly. 
+But what if there was a better way? What if she could instead compile a list of her favourite classes (in order of importance) a few days earlier and send it to the registrar. The registrar would compile this list from all students, and then sort students into their preferred classes in order of registration time, breaking ties randomly. And people wouldn't get locked out of classes they want to take because Portal decided to crash on them randomly. 
 
 ### Why a language?
 _Why is a DSL appropriate for your user(s)? How does it address the need?_
 
+If we had a better course registration system, then this DSL might not be necessary at all. However, I believe we're under contract with the company that makes our portal, so we won't be able to switch away from it for the next few years at least.
+
+First, I'll talk about some of the alternative solutions to the problem, and why they're not as good (in my opinion) as a DSL. 
+
+One way to solve this problem would be to do what the CS department did last semester by sending out a pre-registration survey to all students. However, one of the UX problems with the survey was that it was very verbose. I think writing a program in this language would be a more succint way to convey your registration intentions. In addition, I don't know what tools Google provides to parse the results of Google Forms, but if the results had to be manually compiled that would cost a lot of person-hours. 
+
+Another alternative way to solve the problem would be to just have the registrar manually compile lists of people's desired classes. However, in a school of 800 people this would be an immensely time consuming process, and prone to user error. Automating the process would be much simpler, which would require people's class lists to be easily parsable. Having them write these lists using a particular structure (specifically, the structure of this DSL) would make the parsing job much simpler. 
+
+Since everyone at Mudd has taken CS5 or CS42, they all have experience dealing with a small DSL (Picobot). I think it wouldn't be hard for people to learn how to write a program in this DSL. It addresses the need by allowing people to register for classes while bypassing the downsides of using the portal directly, which I think is exactly what people want.  
 
 ### Why you?
 _What excites you about this idea? How did you come up with it?_
 
-The Portal is possibly the most hated piece of software among Mudders. Coming up with a better alternative would make a lot of people (including myself) a lot happier. 
+The Portal is possibly the most hated piece of software among Mudders. Coming up with a better alternative would make a lot of people (including myself) a lot happier. One of my priorities in this final project is building something that would actually make people's lives better, and I think that building this system would make Mudders a lot less stressed about registration.
 
 ### Domain
 _Describe the project's domain in five words._
@@ -51,6 +60,12 @@ _What might happen when a program runs? How does a program interact with the
 user? What kinds of errors might occur, and how might they be communicated to
 the user?_
 
+Note that running this program wouldn't directly enroll a student in classes. Instead, it would put their preferences into some central database of preferences. In particular, I'm imagining that every class would have a "waiting list" into which a student would go if they listed the class in their preferences. 
+
+Then, there would be another program that actually sorts students into classes by taking people off the waiting list in order of priority (and breaking ties randomly). This program would then either directly interface with Portal and reserve that many seats for pre-registered students or print out a list of classes and how many seats to reserve for the registrar to take care of manually. 
+
+The only kind of error that can occur in this case would be parse errors, where a program doesn't adhere to the structure expected by the parser. These could be either syntax errors, where the program isn't formatted correctly, or runtime errors where, for instance, a class can't be found. These could be communicated to the user by throwing the appropriate type of exception - for instance, a ClassNotFound exception if the class the user wants to register for doesn't exist, or NameNotFound exception if the user forgot to enter their name or their name doesn't exist in the list of HMC students.
+
 
 ### Expressiveness
 _What should be easy to do in this language? What should be possible, but
@@ -63,6 +78,8 @@ aren't and conjecture why not. If so, describe them and provide links. How well
 do they address the need? Are there any particularly admirable qualities of the
 language? Are there parts of the language you think could be improved?_
 
+There are no other DSLs in this domain that I know of. I imagine there aren't any because the domain is really small - for all we know, it could be just Mudd that has to deal with a terrible portal. 
+
 
 ## The Project
 This section examines whether the idea makes for a good CS 111 project.
@@ -74,6 +91,8 @@ spent directly engaging in the **language** aspects of this project (e.g.,
 making language design decisions), as opposed to "systems" aspects of the
 project (e.g., implementing a complicated semantics that doesn't require a lot
 of language design)?_
+
+Because programs in this language have such simple syntax, I imagine most of someone's time spent on thier project would be working on the "systems" aspect of the project. However, because the lanugage (at least right now) has natural language (English) embedded in it, building the parser (which I consider part of the language aspects of the project) could be a difficult thing to do.
 
 
 ### Scope
