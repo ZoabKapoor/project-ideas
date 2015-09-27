@@ -10,6 +10,9 @@ _What need is met by your idea? Who are you helping? What is that person's
 experience like now? What would their experience be like if you could help 
 them?_
 
+Picture this: A student, sitting in her room at 12:14 PM. HMC's portal is open on her laptop. Her registration starts in a minute. She knows that two of the classes she wants to take have only a few seats left in them. The clock strikes 12:15. She makes a choice, and regretfully clicks the search button on the Portal. After a few agonizing seconds, she gets redirected back to the Portal search page. "You shouldn't have clicked refresh", the angry red text says. Confused, she navigates back to the course she wanted. By that time, both courses are filled up. She shakes her fist at the heavens and curses the Portal.
+
+But what if there was a better way? What if she could instead compile a list of her favourite classes (in order of importance) a few days earlier and send it to the registrar. The registrar would compile this list from all students, and then sort students into their preferred classes in order of registration time, breaking ties randomly. And people wouldn't have to deal with Portal deciding to crash on them randomly. 
 
 ### Why a language?
 _Why is a DSL appropriate for your user(s)? How does it address the need?_
@@ -18,15 +21,30 @@ _Why is a DSL appropriate for your user(s)? How does it address the need?_
 ### Why you?
 _What excites you about this idea? How did you come up with it?_
 
+The Portal is possibly the most hated piece of software among Mudders. Coming up with a better alternative would make a lot of people (including myself) a lot happier. 
 
 ### Domain
 _Describe the project's domain in five words._
 
+Like the Portal, but better.
 
 ### Interface (syntax)
 _How might the user interact with the language? What does programming look 
 like? Why is this the right way to interact with the problem domain?_ 
 
+This is what I imagine a sample program might look like:
+
+``` Name: Joe Platt
+
+I want to register for [range] credits;
+I want to register for these classes:
+	1. DSLs
+	2. LSD (Software Development)
+	3. LDS (Intro to Mormonism)
+	...
+```
+
+Where [range] is a numeric range of credits whose lower bound is 12 and upper bound is 18. 
 
 ### Operation (semantics)
 _What might happen when a program runs? How does a program interact with the
