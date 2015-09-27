@@ -103,3 +103,12 @@ _How big an idea is this? How ambitious is this project?_
 _Why might this be a good idea for a project? Why might this not be a good idea 
 project?_
 
+I think this would be a good idea for a project because it directly solves a problem experienced by the immediate population. 
+The benefits of this are twofold: 
+1. The implementer can easily gather user requirements/feature requests as they build the project.
+2. We know for sure that there will be a user base for this DSL. 
+
+There are also two main reasons why this might not be a good project idea:
+1. As mentioned earlier, the implementer would probably spend a lot more time engaging in the systems aspect of the language than the design aspect. Since this class seems to be focused on language design in a big way, this project may not be best at fulfilling the learning goals of the class.
+2. Even if this language did exist, the bureaucracy required to get anything done with Mudd's administration may be a prohobitively large barrier to actually adopting this system.
+
