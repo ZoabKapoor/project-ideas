@@ -43,14 +43,15 @@ like? Why is this the right way to interact with the problem domain?_
 
 This is what I imagine a sample program might look like:
 
-``` Name: Joe Platt
+```
+Name: Joe Platt
 
 I want to register for [range] credits;
 I want to register for these classes:
-	1. DSLs
-	2. LSD (Software Development)
-	3. LDS (Intro to Mormonism)
-	...
+    1. DSLs
+    2. LSD (Software Development)
+    3. LDS (Intro to Mormonism)
+    ...
 ```
 
 Where [range] is a numeric range of credits whose lower bound is 12 and upper bound is 18. 
