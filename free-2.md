@@ -18,7 +18,7 @@ Coffee drinks are difficult to make. In the world of the ever-present hipster, i
 
 Alcoholic beverages present a similar challenge. The barista I was discussing this project idea with told me about his favourite drink: "Old fashioned, with 2 shots of rye whisky, cane syrup instead of brown sugar, extra bitters, and orange zest instead of an orange slice". 
 
-If there was a standard language by which a customer could specify a drink to an arbitrary level of precision, then you could easily program an automatic coffee machine or autobarista to make exactly the drink you want. 
+If there was a standard language by which a customer could specify a drink to an arbitrary level of precision, then you could easily program an automatic coffee machine or autobartender to make exactly the drink you want. 
 
 ### Why a language?
 _Why is a DSL appropriate for your user(s)? How does it address the need?_
@@ -34,7 +34,7 @@ I **love** coffee, so I'd be really excited to actually make this kind of thing.
 ### Domain
 _Describe the project's domain in five words._
 
-Making specialty caffiendated/alcoholic drinks.
+Making specialty caffienated/alcoholic drinks.
 
 ### Interface (syntax)
 _How might the user interact with the language? What does programming look 
@@ -59,8 +59,9 @@ Begin PUMPKIN_SPICE_LATTE:
 1. LATTE
 2. Add 2 pumps pumpkin
 3. Add 1 shake Cinnamon
-~~4. Add judgement~~~
+~~4. Add judgement~~
 End PUMPKIN_SPICE_LATTE
+```
 
 ### Operation (semantics)
 _What might happen when a program runs? How does a program interact with the
