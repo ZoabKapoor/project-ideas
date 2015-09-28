@@ -76,14 +76,23 @@ making language design decisions), as opposed to "systems" aspects of the
 project (e.g., implementing a complicated semantics that doesn't require a lot
 of language design)?_
 
+Almost all of the time will be spent engaging in the language aspects of this. We need to figure out how to design the bricks so they can fit together, which basic bricks to provide, how many and which colors to use, what material to make them from, and lots more. So many design decisions to make!
+
+The actual implementation of it should be pretty easy. We just need a couple of designers to mock up some prototypes, a couple million in funding to set up some sweatshops in China, and we'll be off to the races!
 
 ### Scope
 _How big an idea is this? How ambitious is this project?_
 
+This is a pretty big idea. This will revolutionize the toy industry and change the lives of kids all over the world! We could see a boom in the quantity of artists, sculptors, architects, and engineers as a result of creating this toy.
+
+Since the language's building blocks are a physical product, building this into a business at scale will be quite a challenge. In the design stage, we'll need to carefully think about how to design the blocks as well, because any future blocks we make will need to be backwards compatible with the first generation. 
 
 ### Benefits and drawbacks
 _Why might this be a good idea for a project? Why might this not be a good idea 
 project?_
 
-Well, it's already been done, so there's that. 
+Note: _I'm writing this from the perspective of myself again, because this question is specific to CS111 and it wouldn't make sense for the Lego designers to be thinking about it._
+
+On the plus side, this idea is all about language design, which is what this class is focused on. 
+On the other hand, it's already been done, and not just by the Lego company: Hayden Blauzvern's final project in CS111 last year looks very similar to this. 
 
