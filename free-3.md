@@ -1,6 +1,4 @@
-# Anti project
-
-My debugger
+# Free project 3
 
 ## The user and a language
 This section describes who the project would serve and why a language might be a
@@ -12,6 +10,7 @@ _What need is met by your idea? Who are you helping? What is that person's
 experience like now? What would their experience be like if you could help 
 them?_
 
+Imagine this: You want to be the very best, like no one ever was.
 
 ### Why a language?
 _Why is a DSL appropriate for your user(s)? How does it address the need?_
