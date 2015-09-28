@@ -86,6 +86,7 @@ _Why might this be a good idea for a project? Why might this not be a good idea
 project?_
 
 This wouldn't be a good idea for the DSLs final project because it would be:
+
 1. Hard. Like, really hard. I'm skeptical I'd be able to finish by the end of the semester if I did try to build it.
 2. Not very involved as far as language design goes. 
 
